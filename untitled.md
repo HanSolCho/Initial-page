@@ -4,8 +4,6 @@ description: 본 화면은 API 문서 작성을 위한 테스트화면입니다.
 
 # API 문서 테스트
 
-
-
 {% api-method method="get" host="domain" path="/경로" %}
 {% api-method-summary %}
 configuraionInfo
@@ -38,7 +36,6 @@ asdasdsfafdw
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
@@ -65,7 +62,7 @@ Could not find a cake matching this query.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 { "message" : ":tet"}
 ```
 {% endapi-method-response-example %}
@@ -73,15 +70,13 @@ Could not find a cake matching this query.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-{% api-method method="get" host="domain" path="/경로" %}
+{% api-method method="get" host="domain" path="/경로/testapi" %}
 {% api-method-summary %}
-aaaaa
+testapi
 {% endapi-method-summary %}
 
 {% api-method-description %}
-해당 api는 get방식이지만 body에 메세지가 담길경우....
+test 해당 api는 get방식이지만 body에 메세지가 담길경우....
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -94,19 +89,18 @@ Authentication token to track down who is emptying our stocks.
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="ver" type="string" required=false %}
-3.1.1
+abc
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="integer" %}
-3
+322
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id2" type="string" %}
-asdasdsfafdw
+testtest
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
-
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -134,7 +128,7 @@ Could not find a cake matching this query.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 { "message" : ":tet"}
 ```
 {% endapi-method-response-example %}
