@@ -1,26 +1,22 @@
 ---
-description: d
+description: 본 화면은 API 문서 작성을 위한 테스트화면입니다.
 ---
 
-# Untitlded
+# API 문서 테스트
 
-{% api-method method="get" host="ㅇㅇㅇㅇㅇㅇㅇ" path="ㅇㅇㅇㅇㅇㅇㅇ" %}
+
+
+{% api-method method="get" host="domain" path="/경로" %}
 {% api-method-summary %}
-Get Cake
+configuraionInfo
 {% endapi-method-summary %}
 
 {% api-method-description %}
-ㅇㅇㅇㅇㅇ ㅇ free cakddes.
+해당 api는 get방식이지만 body에 메세지가 담길경우....
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="ddd" type="string" %}
-ID ofddd the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
 Authentication token to track down who is emptying our stocks.
@@ -28,12 +24,16 @@ Authentication token to track down who is emptying our stocks.
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
+{% api-method-parameter name="ver" type="string" required=false %}
+3.1.1
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
+{% api-method-parameter name="id" type="integer" %}
+3
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="id2" type="string" %}
+asdasdsfafdw
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -56,6 +56,16 @@ Could not find a cake matching this query.
 
 ```text
 {    "message": "Ain't no cake like that."}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=500 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{ "message" : ":tet"}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
