@@ -39,9 +39,45 @@ asdasdsfafdw
 {% endapi-method-request %}
 
 
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Cake sucddcessfully retrieved.
+{% endapi-method-response-example-description %}
+
+```text
+{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+Could not find a cake matching this query.
+{% endapi-method-response-example-description %}
+
+```text
+{    "message": "Ain't no cake like that."}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=500 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{ "message" : ":tet"}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+
 {% api-method method="get" host="domain" path="/경로" %}
 {% api-method-summary %}
-configuraionInfo
+aaaaa
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -70,6 +106,7 @@ asdasdsfafdw
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
+
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
