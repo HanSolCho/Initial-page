@@ -1,19 +1,23 @@
-# Untitled
+---
+description: d
+---
 
-{% api-method method="get" host="https://test.com" path="/v1/cakes/:id" %}
+# Untitlded
+
+{% api-method method="get" host="ㅇㅇㅇㅇㅇㅇㅇ" path="ㅇㅇㅇㅇㅇㅇㅇ" %}
 {% api-method-summary %}
-Get Cakes
+Get Cake
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+ㅇㅇㅇㅇㅇ ㅇ free cakddes.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
+{% api-method-parameter name="ddd" type="string" %}
+ID ofddd the cake to get, for free of course.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -37,10 +41,10 @@ Whether the cake should be gluten-free or not.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+Cake sucddcessfully retrieved.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
 ```
 {% endapi-method-response-example %}
@@ -50,13 +54,11 @@ Cake successfully retrieved.
 Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {    "message": "Ain't no cake like that."}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
