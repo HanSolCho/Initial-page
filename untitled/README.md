@@ -4,13 +4,13 @@ description: 본 화면은 API 문서 작성을 위한 테스트화면입니다.
 
 # API 문서 테스트
 
-{% api-method method="get" host="domain" path="/경로" %}
+{% api-method method="get" host="https://111.111.111.111" path="/경로" %}
 {% api-method-summary %}
-configuraionInfo
+testapi
 {% endapi-method-summary %}
 
 {% api-method-description %}
-해당 api는 get방식이지만 body에 메세지가 담길경우....
+api descri
 {% endapi-method-description %}
 
 {% api-method-spec %}
